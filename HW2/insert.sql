@@ -5,6 +5,13 @@ VALUES
 ('ivan', 'ivan@mail.com', 'online', '+79000000003'),
 ('anna', 'anna@mail.com', 'online', '+79000000004');
 
+INSERT INTO chats (title, created_at, type, description)
+VALUES
+('Общий чат', '2026-09-20 10:00:00', 'group', 'Общий чат'),
+('Рабочий чат', '2026-09-20 11:00:00', 'group', 'Рабочая группа'),
+('Новости', '2026-09-21 12:00:00', 'group', 'Новости'),
+('Проект', '2026-09-22 09:00:00', 'group', 'Обсуждение проекта');
+
 INSERT INTO messages
 (chat_id, user_id, text, sent_at, edited_at)
 VALUES
